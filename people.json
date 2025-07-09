@@ -1,0 +1,26 @@
+[
+  {
+    "first_name": "Олена",
+    "last_name": "",
+    "middle_name": "",
+    "gender": "female",
+    "birth_date": "1990-03-03",
+    "death_date": null
+  },
+  {
+    "first_name": "Андрій",
+    "last_name": "",
+    "middle_name": "",
+    "gender": "male",
+    "birth_date": "1985-07-05",
+    "death_date": null
+  },
+  {
+    "first_name": "olga",
+    "last_name": "testova",
+    "middle_name": "olegovna",
+    "gender": "female",
+    "birth_date": "1980-10-12",
+    "death_date": null
+  }
+]
