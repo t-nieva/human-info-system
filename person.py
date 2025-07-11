@@ -29,7 +29,6 @@ class Person:
 
     @staticmethod
     def parse_date(user_input: str)->date:
-        # Додати метод для нормалізації дати (parse_date())
         """Parses a user input date string and returns it in date format."""
         formats = ["%Y-%m-%d", "%d.%m.%Y", "%d %m %Y", "%d/%m/%Y", "%d-%m-%Y"]
         for fmt in formats:
@@ -62,11 +61,11 @@ class Person:
         }
 
 
-    def calculate_age(self)-> int:
+    def calculate_age(self, today=None)-> int:
         """Calculates age in full years (at death or today)."""
-        end_date = self.death_date or date.today()
+        end_date = self.death_date or (today or date.today())
         age = end_date.year - self.birth_date.year
-        # Якщо день народження ще не настав у цьому році — відняти 1
+        # If the birthday hasn't occurred yet this year — subtract 1
         if (end_date.month, end_date.day) < (self.birth_date.month, self.birth_date.day):
             age -= 1
         return age
